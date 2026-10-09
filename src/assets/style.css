@@ -1,0 +1,74 @@
+/* Tema "Colmenas en Riesgo": fondo azul noche y acento ámbar sobre Bootswatch Darkly */
+:root {
+    --fondo-1: #0b132b;
+    --fondo-2: #1c2541;
+    --acento: #f5b301;
+    --borde: #3a506b;
+    --texto: #f2f2f2;
+}
+
+body {
+    background: linear-gradient(135deg, var(--fondo-1) 0%, var(--fondo-2) 100%) fixed;
+    color: var(--texto);
+}
+
+.fondo-app { min-height: 100vh; padding-bottom: 24px; }
+
+.encabezado {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 20px 32px;
+    margin-bottom: 20px;
+    border-bottom: 3px solid var(--acento);
+    background: rgba(0, 0, 0, 0.25);
+}
+.logo { height: 64px; width: 64px; }
+.titulo-app { margin: 0; font-weight: 800; color: var(--acento); letter-spacing: 0.5px; }
+.subtitulo-app { margin: 0; color: #c9d1e3; }
+
+.titulo-seccion {
+    margin: 8px 0 16px;
+    padding-left: 12px;
+    border-left: 5px solid var(--acento);
+    font-weight: 700;
+}
+
+.panel-controles { margin-bottom: 8px; }
+.etiqueta-control { font-weight: 600; color: var(--acento); margin-bottom: 4px; }
+
+.resumen {
+    margin: 12px 0 16px;
+    padding: 10px 16px;
+    border-radius: 6px;
+    background: rgba(245, 179, 1, 0.12);
+    border: 1px solid rgba(245, 179, 1, 0.45);
+    font-weight: 600;
+}
+
+.tarjeta {
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid var(--borde);
+    border-radius: 8px;
+}
+.tarjeta .card-header {
+    background: rgba(0, 0, 0, 0.25);
+    border-bottom: 1px solid var(--borde);
+}
+.titulo-tarjeta { font-weight: 700; color: var(--acento); }
+.text-muted { color: #aab4cc !important; }
+
+.pie-pagina { text-align: center; color: #8d99b3; margin-top: 8px; }
+
+/* Dropdowns de Dash sobre fondo oscuro */
+.Select-control, .Select-menu-outer {
+    background-color: var(--fondo-2) !important;
+    border-color: var(--borde) !important;
+}
+.Select-value-label, .Select-placeholder, .Select-input > input,
+.Select--single > .Select-control .Select-value .Select-value-label {
+    color: var(--texto) !important;
+}
+.VirtualizedSelectOption { background-color: var(--fondo-2) !important; color: var(--texto) !important; }
+.VirtualizedSelectFocusedOption { background-color: var(--borde) !important; }
+.Select-arrow { border-top-color: var(--acento) !important; }

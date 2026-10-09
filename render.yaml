@@ -1,0 +1,6 @@
+services:
+  - type: web
+    name: dash-mapas-dtorres
+    runtime: docker
+    plan: free
+    dockerfilePath: ./Dockerfile
